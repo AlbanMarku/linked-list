@@ -1,0 +1,16 @@
+{
+  "name": "lists",
+  "version": "1.0.0",
+  "description": "link list use",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbanMarku/linked-list.git"
+  },
+  "keywords": [],
+  "author": "Alban Marku",
+  "license": "ISC"
+}
