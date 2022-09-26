@@ -49,6 +49,23 @@ class LinkedList {
         }
     }
 
+    pop() {
+        let current = this.head;
+
+        if (!current.next) {
+            this.head = null;
+        } else {
+            let previous;
+
+            while (current.next) {
+                previous = current;
+                current = current.next;
+            }
+
+            previous.next = null;
+        }
+    }
+
     search(index) {
         if (this.size <= index || index < 0) {
             console.log("there aren't that many items.");
@@ -81,7 +98,5 @@ class LinkedList {
 
 const ll = new LinkedList();
 ll.insertFirst(2);
-ll.insertFirst(3);
-ll.insertFirst(4);
-ll.insertBetween("hi", 4);
+ll.pop();
 ll.printList();
