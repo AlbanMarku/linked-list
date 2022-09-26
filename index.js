@@ -1,11 +1,11 @@
 /* eslint-disable no-console */
 /* eslint-disable no-plusplus */
-const message = "hiya";
 
-function runThis() {
-    for (let i = 0; i < 3; i++) {
-        console.log(message);
+class Node {
+    constructor(data, next = null) {
+        this.data = data;
+        this.next = next;
     }
 }
 
-runThis();
+export default Node;
